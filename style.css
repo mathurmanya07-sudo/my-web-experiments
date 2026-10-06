@@ -1,0 +1,129 @@
+/* Soft Pink & White Theme */
+:root {
+    --bg-color: #fff5f7; /* Very soft, light pink background */
+    --text-main: #2d2a2e; /* Soft black for readability */
+    --text-muted: #6e6870; /* Muted grey-purple for secondary text */
+    --accent: #d66b8a; /* Elegant rose pink for buttons and highlights */
+    --accent-hover: #b85472; /* Slightly darker pink for hover states */
+    --card-bg: #ffffff; /* Pure white cards */
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-main);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar {
+    background-color: var(--bg-color) !important;
+    border-bottom: 1px solid rgba(214, 107, 138, 0.1); /* Subtle pink line */
+}
+
+.navbar-brand {
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: var(--text-main) !important;
+}
+
+.hero {
+    padding: 100px 0;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+}
+
+.hero .highlight {
+    color: var(--accent);
+}
+
+.section {
+    padding: 80px 0;
+}
+
+/* White cards with a soft pink shadow */
+.surface-card {
+    background-color: var(--card-bg);
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 10px 40px rgba(214, 107, 138, 0.08); 
+    border: 1px solid rgba(214, 107, 138, 0.05);
+}
+
+.about-image {
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    max-height: 400px; /* Keeps the image from getting too tall */
+    object-fit: cover; /* Ensures the image fills the space nicely */
+    box-shadow: 0 8px 25px rgba(214, 107, 138, 0.15);
+    border: 4px solid #ffffff; /* Adds a crisp white border around the image */
+}
+
+.btn-accent {
+    background-color: var(--accent);
+    color: white;
+    border-radius: 50px;
+    padding: 12px 35px;
+    font-weight: 500;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.btn-accent:hover {
+    background-color: var(--accent-hover);
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(214, 107, 138, 0.3);
+}
+
+.btn-outline-dark {
+    color: var(--accent);
+    border-color: var(--accent);
+    transition: all 0.3s ease;
+}
+
+.btn-outline-dark:hover {
+    background-color: var(--accent);
+    color: white;
+    border-color: var(--accent);
+}
+
+.eyebrow {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: var(--accent);
+}
+/* Styling for the new Achievements Table */
+.table-custom {
+    background-color: transparent;
+    margin-bottom: 0;
+}
+
+.table-custom th {
+    background-color: transparent;
+    color: var(--accent);
+    border-bottom: 2px solid rgba(214, 107, 138, 0.2);
+    font-weight: 600;
+    padding-bottom: 15px;
+}
+
+.table-custom td {
+    background-color: transparent;
+    padding: 20px 10px;
+    border-bottom: 1px solid rgba(214, 107, 138, 0.1);
+    color: var(--text-muted);
+    vertical-align: middle;
+}
+
+.table-custom tr:last-child td {
+    border-bottom: none;
+}
+
+.table-custom .fw-semibold {
+    color: var(--text-main);
+    font-weight: 600 !important;
+}
