@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- EXP 4: SEO META TAGS -->
+    <meta name="description" content="Portfolio of Manya, a B.Tech student and web developer.">
+    <meta name="keywords" content="Manya, portfolio, web development, HTML, CSS">
+    <meta name="author" content="Manya">
+    
+    <title>Manya's Portfolio</title>
+    
+    <style>
+        /* Same CSS as Exp 2 */
+        body { font-family: Arial; background-color: rgb(245, 185, 197); margin: 0; }
+        header { background-color: #d66b8a; color: white; padding: 15px; text-align: center; }
+        nav a { color: rgb(254, 254, 254); margin: 0 10px; text-decoration: none; font-weight: bold; }
+        .container { width: 60%; margin: 20px auto; }
+        section { background: rgb(247, 244, 244); padding: 20px; border-radius: 8px; margin-bottom: 20px; }
+        .project { border: 1px solid #dd92a7; padding: 10px; margin-top: 10px; border-radius: 5px; }
+    </style>
+</head>
+<body>
+
+    <!-- Semantic HTML: <header> and <nav> -->
+    <header>
+        <h1>Manya's Portfolio</h1>
+        <nav aria-label="Main Navigation">
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Semantic HTML: <main> -->
+    <main class="container">
+        
+        <section id="about">
+            <!-- Proper heading structure: h2 -->
+            <h2>About Me</h2>
+            <p>Hi, I am Manya, a 2nd-year B.Tech student.</p>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="project">Weather App</div>
+            <div class="project">To-Do List</div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <form>
+                <!-- Accessibility: Labels for inputs -->
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" placeholder="Name" required><br><br>
+                
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" placeholder="Email" required><br><br>
+                
+                <input type="submit" value="Send">
+            </form>
+        </section>
+
+    </main>
+
+</body>
+</html>
