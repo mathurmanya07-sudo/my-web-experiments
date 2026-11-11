@@ -1,0 +1,81 @@
+/* Light blue background for the whole page */
+body {
+  background-color: #e0f2fe; 
+  margin: 0;
+  padding: 0;
+}
+
+.app-container {
+  max-width: 500px;
+  margin: 80px auto; /* Pushes it down from the top */
+  font-family: Arial, sans-serif;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1); /* Soft shadow */
+}
+
+h1 {
+  color: #1e3a8a; /* Dark blue text for title */
+  text-align: center;
+  margin-top: 0;
+}
+
+.input-section {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input { 
+  flex: 1; 
+  padding: 12px; 
+  border: 1px solid #cbd5e1; 
+  border-radius: 6px; 
+  outline: none;
+}
+
+input:focus {
+  border-color: #3b82f6; /* Blue border when clicked */
+}
+
+button { 
+  padding: 12px 20px; 
+  background: #3b82f6; /* Bright blue button */
+  color: white; 
+  border: none; 
+  border-radius: 6px; 
+  cursor: pointer; 
+  font-weight: bold;
+}
+
+button:hover { 
+  background: #2563eb; 
+}
+
+.notes-list { 
+  list-style: none; 
+  padding: 0; 
+}
+
+.notes-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f8fafc;
+  padding: 12px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  border-left: 4px solid #3b82f6; /* Blue accent line */
+}
+
+.notes-list button { 
+  margin-left: 8px; 
+  background: #ef4444; /* Red delete button */
+  padding: 6px 12px;
+  font-size: 12px; 
+}
+
+.notes-list button:hover { 
+  background: #dc2626; 
+}
